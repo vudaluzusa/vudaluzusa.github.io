@@ -3,13 +3,13 @@ import sys, os, os.path
 filename = sys.argv[1];
 extension = os.path.splitext(filename)[1];
 
-if extension == "txt":
+if extension == ".txt":
   os.system("gedit " + filename);
 
-if extension == "mp4":
+if extension == ".mp4":
   os.system("vlc " + filename);
   
-if extension == "html":
+if extension == ".html":
   os.system("opera " + filename);
   
 if extension == ".py":
